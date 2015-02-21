@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR"><head>
+	<meta charset="UTF-8">
+	<meta name="robots" content="noindex, nofollow">
+
+	<title>Admin FFW</title>
+
+	<link rel="stylesheet" type="text/css" href="static/css/main.css">
+	<link rel="stylesheet" type="text/css" href="static/css/font-awesome.css">
+	<link rel="stylesheet" type="text/css" href="js/uploadify/uploadify.css">
+</head>
+<body>
+
+<header id="header">
+
+	<a href="index.html" id="logo"></a>
+
+	<nav>
+		<ul id="menu">
+			<li><a href="parceiros.html"><i class="fa fa-group"></i> Parceiros</a></li>
+			<li><a href="blog.html" class="current"><i class="fa fa-newspaper-o"></i> Blog</a></li>
+			<!-- <li><a href="emails.html"><i class="fa fa-envelope"></i> E-mails</a></li> -->
+		</ul>
+	</nav>
+	
+</header>
+
+<main id="content">
+	
+	<h1><i class="fa fa-comments-o"></i> Novo post</h1>
+	
+	<label id="input-imagem">
+		Imagem principal
+		<br class="clear">
+		<input type="file" id="imagem">
+	</label>
+
+	<input type="hidden" id="token" value="teste">
+
+	<input type="hidden" id="id" value="teste">
+
+	<label>
+		Data da postagem
+		<input type="text" id="data">
+	</label>
+
+	<label>
+		Título do Post
+		<input type="text" id="titulo">
+	</label>
+
+	<label>
+		Conteúdo
+		<textarea id="texto"></textarea>
+	</label>
+
+	<button id="enviaForm">Salvar</button>
+
+</main>
+
+
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/uploadify/jquery.uploadify.v2.1.0.min.js"></script>
+<script type="text/javascript" src="js/uploadify/swfobject.js"></script>
+<script type="text/javascript" src="js/plugin/mask.js"></script>
+<script type="text/javascript" src="js/plugin/purl.js"></script>
+<script type="text/javascript" src="js/criaposts.js"></script>
+<!--[if lt IE 9]>
+	<script src="static/js/plugin/html5shiv.js"></script>
+<![endif]-->
+</body>
+</html>
